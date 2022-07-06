@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<title>Contact Us Form</title>
+        <script src="js/formValidation.js"></script>
+	</head>
+	<body>
+		<h1> Contact Us </h1>
+
+		<form name="sampleForm" method="post" action="#" onsubmit="return
+		validateForm(this);">
+		
+			<label> First Name: </label>
+			<input type="text" name="firstName" value="" placeholder="enter first name"/>
+            <span id="error 1"></span>
+				
+			<br/>
+			<br/>
+						
+			<label> Last Name: </label>
+			<input type="text" name="firstName" value="" placeholder="enter last name"/>
+            <span id="error 2"></span>
+				
+			<br/>
+			<br/>
+
+				
+			<label> Email: </label>
+			<input type="email" name="email" value="" placeholder="enter email"/>
+            <span id="error 3"></span>
+				
+			<br/>
+			<br/>
+			
+			<label> Gender: </label>
+			 Male <input type="radio" name="gender" value="Male"/> 
+			Female <input type="radio" name="gender" value="Female"checked="checked"/> 
+			<span id="error 4"></span>
+
+			<br/>
+			<br/>
+
+			
+			<label> Country: </label>
+			<select name="country">
+				<option value=""> Select Country</option>
+				<option value="TT"> Trinidad and Tobago</option>
+				<option value="BBD">Barbados</option>
+				<option value="GUY"> Guyana</option>
+			</select>
+            <span id="error 5"></span>
+			
+			<br/>
+			<br/>
+
+            <label>Self Description: </label>
+			<textarea name="selfDesc"></textarea>
+			<span id="error6"></span>
+
+            <br/>
+			<br/>
+			
+			<div>
+				<input type="submit" name="sampleSubmit" value="Submit"/>
+				<input type="reset" name="sampleReset" value="Reset"/>
+			</div>
+		</form>
+	</body>
+</html>
